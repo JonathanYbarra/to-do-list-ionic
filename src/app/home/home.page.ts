@@ -7,6 +7,35 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  todoList = [
+    {
+      itemName: 'Coding',
+      itemDueDate: '01-13-21',
+      itemPriority: 'high',
+      itemCategory: 'Word'
+    },
+    {
+      itemName: 'Design',
+      itemDueDate: '02-17-21',
+      itemPriority: 'low',
+      itemCategory: 'Work'
+    },
+    {
+      itemName: 'Shopping',
+      itemDueDate: '01-02-21',
+      itemPriority: 'middle',
+      itemCategory: 'Personal'
+    },
+    {
+      itemName: 'Workout',
+      itemDueDate: '01-22-21',
+      itemPriority: 'high',
+      itemCategory: 'Personal'
+    }
+  ]
+
+  today: number = Date.now();
+  
+  constructor() { }
 
 }
